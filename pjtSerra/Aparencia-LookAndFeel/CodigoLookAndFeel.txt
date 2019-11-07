@@ -1,0 +1,32 @@
+
+
+// lookandfeel muda de cores
+// biblioteca     looksdemo-2.3.1.jar
+
+          //SkyBlue()
+         //BrownSugar()
+         // DarkStar()  
+        //DesertGreen()
+        //Silver()
+        //ExperienceRoyale()
+              try {
+            PlasticLookAndFeel.setPlasticTheme(new ExperienceRoyale());
+                  try {
+                      UIManager.setLookAndFeel("com.jgoodies.looks.plastic.Plastic3DLookAndFeel");
+                  } catch (InstantiationException ex) {
+                      Logger.getLogger(jfprincipal.class.getName()).log(Level.SEVERE, null, ex);
+                  } catch (IllegalAccessException ex) {
+                      Logger.getLogger(jfprincipal.class.getName()).log(Level.SEVERE, null, ex);
+                  } catch (UnsupportedLookAndFeelException ex) {
+                      Logger.getLogger(jfprincipal.class.getName()).log(Level.SEVERE, null, ex);
+                  }
+           
+
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+    SwingUtilities.updateComponentTreeUI(this);
+
+ jdprincipal.setBackground(SystemColor.BLACK);
+
+
